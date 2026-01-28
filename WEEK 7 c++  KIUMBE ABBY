@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Employees {
+private:
+    string name;
+    int age;
+    int serviceYear;
+    double salary;
+
+public:
+    // Parameterized constructor
+    Employees(string n, int a, int s, double sal) {
+        name = n;
+        age = a;
+        serviceYear = s;
+        salary = sal;
+    }
+
+    // Accessor member functions
+    string getName() {
+        return name;
+    }
+
+    int getAge() {
+        return age;
+    }
+
+    int getServiceYear() {
+        return serviceYear;
+    }
+
+    double getSalary() {
+        return salary;
+    }
+};
